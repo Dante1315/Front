@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/Logo .png">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/CrearCuenta.css">
     <title>The ninth planet </title>
 
     <!--tipografías-->
@@ -57,7 +58,9 @@
                 <hr width="90%;" color=#E0E0E0 size="6">
 
                 <div class="CrearCuenta">
-                    <button name="Iniciar Sesión" type="button">Crear cuenta</button>
+
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Crear
+                        Cuenta</button>
                 </div>
             </form>
 
@@ -65,7 +68,7 @@
         </nav>
     </div>
 
-    <!--<div class="bg-text">TEXT</div>-->
+    <!--información de la escuela y del equipo-->
     <div class="footer">
         <table>
 
@@ -73,29 +76,24 @@
 
                 <td>
                     <h3>CECyT N°9 “Juan de Dios Bátiz” </h3>
-                    
+
                 </td>
 
                 <td></td>
 
                 <td>
                     <h2>Ivy-code</h2>
-                   
+
                 </td>
 
             </tr>
-
             <tr>
-
                 <td>
-                    <h4 >Es una institución educativa de nivel medio superior perteneciente al Instituto Politécnico
+                    <h4>Es una institución educativa de nivel medio superior perteneciente al Instituto Politécnico
                         Nacional.
-
                     </h4>
                 </td>
-
                 <td></td>
-
                 <td>
                     <ol>
 
@@ -113,7 +111,106 @@
         </table>
 
     </div>
+    <!--<header>
+        <nav>
+            <h4 align="center">Iniciar Sesion</h4>
+        </nav>
+    </header>
+    <div class="main_container" align="center">
+        <table width="60%">
+            <tr>
+                <td align="center">
+                    <h3>THE NINE PLANET</h3>
+                    <br>
+                    <p>
+                        aqui va una imagen
+                    </p>
+                    <br>
+                    <p>Aqui va un texto pero no le entemdi lo ponen porfa :(</p>
+                </td>
+                <td align="center">
+                    <div align="center">
+                        <table align="center">
+                            <tr>
+                                <tdalign="center"><input type="email" class="" placeholder="Correo institucional">
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><input type="password" class="" placeholder="Contraseña"></td>
+            </tr>
+            <tr>
+                <td align="center"><button type="button" style="margin-top: 1rem;">INICIAR SESION</button></td>
 
+            </tr>
+            <tr>
+                <td align="center">
+                    <br>
+                    <a href="olvidar_contrasena.html">¿Olvidaste tu contraseña?</a>
+                    <br>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="crear_cuenta.html">
+                        <button type="button">CREAR CUENTA</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </td>
+    </tr>
+    </table>
+    </div>-->
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+
+
+            <div class="container">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+                <br><br>
+                <label for="uname"><b>Crear cuenta</b></label>
+                <hr width="90%;" color=#E0E0E0 size="6">
+                
+                <input Class="A" type="text" placeholder="Nombre" name="uname" required>
+                <input type="text" placeholder="Alias" name="uname" required>
+                <br>
+                <input type="text" placeholder="Apellido" name="uname" required>
+                <br>
+                <input type="text" placeholder="Sexo" name="uname" required>
+                <input type="text" placeholder="Fecha de nacimiento" name="uname" required>
+                <br>
+                <input type="text" placeholder="Correo institucional" name="uname" required>
+                <br>
+                <input type="password" placeholder="Contraseña" name="psw" required>
+                <br>
+                <input type="password" placeholder="Confirmar contraseña" name="psw" required>
+
+
+            </div>
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
