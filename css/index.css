@@ -192,6 +192,111 @@ background: rgba(152, 48, 86, 0.8);
    line-height: 10px;
    color: #F7F7F7;
 }
+/*Botoón dentro del from*/
+.CrearCuentaD{
+ 
+    width: 100%;/*-*/
+    height: 11.5%;/*l*/
+    left: 30%;
+    right: 60px;
+    top: 70%;
+}
+.CrearCuentaD button{
+  
+    width: 50%;/*-*/
+    height: 80%;/*l*/
+    position: relative;
+    background: #1176CE;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transform: rotate(-0.1deg);
+}
+
+.CrearCuentaD button{
+ 
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 10px;
+   color: #F7F7F7;
+}
+
+
+
+.container input[type=textD], select {
+    width: 49.5%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+  
+}
+
+.container input[type=text] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container  input[type=number], select {
+    width: 49.5%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+  
+.container input[type=submit] {
+    width: 100%;
+    background-color: #983056;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 10px;
+    color: #F7F7F7;
+  }
+  
+.container input[type=submit]:hover {
+    background-color: #CA5680;
+  }
+  
+.container  div.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+
+
 
 a{
     
@@ -241,21 +346,15 @@ h1{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
- 
     text-align: center;
     color: #000000;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
     letter-spacing: 0.2px;
-
     /* Light / Black */
-
     color: #373F41;
-
-
    /* Inside Auto Layout */
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -263,127 +362,76 @@ h1{
 }
 .footer h2{
     /* Ivy-code */
-
-
    position: static;
    height: 24px;
    left: 47px;
    right: 47px;
    top: 0px;
-
-/* H6 - bold 18 (24. 0.1px) */
-
-font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 25px;
-line-height: 24px;
-/* identical to box height, or 133% */
-
-text-align: right;
-letter-spacing: 0.1px;
-
-/* Light / Black */
-
-color: #373F41;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 12px 0px;
+   /* H6 - bold 18 (24. 0.1px) */
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 24px;
+   /* identical to box height, or 133% */
+   text-align: right;
+   letter-spacing: 0.1px;
+   /* Light / Black */
+   color: #373F41;
+   /* Inside Auto Layout */
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 12px 0px;
 }
 .footer h3{
     /* CECyT N°9 “Juan de Dios Bátiz” */
-
-
-position: static;
-height: 24px;
-left: 0px;
-right: 0px;
-top: 0px;
-
-/* H6 - bold 18 (24. 0.1px) */
-
-font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 25px;
-line-height: 24px;
-/* identical to box height, or 133% */
-
-text-align: center;
-letter-spacing: 0.1px;
-
-/* Light / Black */
-
-color: #373F41;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 12px 0px;
+    position: static;
+    height: 24px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    /* H6 - bold 18 (24. 0.1px) */
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #373F41;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
 }
 
 .footer h4{
     /* Es una institución educativa de nivel medio superior perteneciente al Instituto Politécnico Nacional. */
-
-
-position: static;
-left: 0px;
-right: 0px;
-top: 36px;
-bottom: 0px;
-
-/* Body 2 - regular 14 (20, 0.2px) */
-
-font-family: Mulish;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 20px;
-/* or 143% */
-
-text-align: center;
-letter-spacing: 0.2px;
-
-/* Light / Black */
-
-color: #373F41;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 12px 0px;
-}
-/*fin footer*/
-
-
-/* Position text in the middle of the page/image 
-.bg-text {
-    background-color: rgb(0, 0, 0);
-   
-    background-color: rgba(0, 0, 0, 0.4);
-  
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 300px;
-    padding: 20px;
+    position: static;
+    left: 0px;
+    right: 0px;
+    top: 36px;
+    bottom: 0px;
+    /* Body 2 - regular 14 (20, 0.2px) */
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    /* or 143% */
     text-align: center;
+    letter-spacing: 0.2px;
+    /* Light / Black */
+    color: #373F41;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
 }
-*/
+/*fin footer*/ 
+
+

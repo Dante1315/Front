@@ -49,8 +49,6 @@
                     <button name="Iniciar Sesión" type="button">
                         Iniciar sesión
                     </button>
-
-
                 </div>
                 <br><br>
                 <a href="">¿Olvidaste tu contraseña? </a>
@@ -60,7 +58,7 @@
                 <div class="CrearCuenta">
 
                     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Crear
-                        Cuenta</button>
+                        cuenta</button>
                 </div>
             </form>
 
@@ -111,40 +109,51 @@
         </table>
 
     </div>
-    
+
     <div id="id01" class="modal">
 
         <form class="modal-content animate" action="/action_page.php" method="post">
 
 
             <div class="container">
+
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
                 </div>
                 <br><br>
-                <label for="uname"><b>Crear cuenta</b></label>
+                <label for="country">Crear cuenta</label>
                 <hr width="90%;" color=#E0E0E0 size="6">
-                
-                <input Class="A" type="text" placeholder="Nombre" name="uname" required>
-                <input type="text" placeholder="Alias" name="uname" required>
-                <br>
-                <input type="text" placeholder="Apellido" name="uname" required>
-                <br>
-                <input type="text" placeholder="Sexo" name="uname" required>
-                <input type="text" placeholder="Fecha de nacimiento" name="uname" required>
-                <br>
-                <input type="text" placeholder="Correo institucional" name="uname" required>
-                <br>
-                <input type="password" placeholder="Contraseña" name="psw" required>
-                <br>
-                <input type="password" placeholder="Confirmar contraseña" name="psw" required>
+
+                <form action="/action_page.php">
+                    <input  type="textD" placeholder="Nombre" name="uname" required>
+                    <input type="textD" placeholder="Alias" name="uname" required>
+                    <input type="text" placeholder="Apellido" name="uname" required>
+                    <select id="Sexo" name="Sexo">
+                        <option value="australia">Sexo</option>
+                        <option value="canada">Mujer</option>
+                        <option value="usa"> Hombre</option>
+                    </select>
+                    <input type="number" placeholder="Fecha de nacimiento" name="uname" required>
+                    <input type="text" placeholder="Correo institucional" name="uname" required>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+                    <input type="password" placeholder="Confirmar contraseña" name="psw" required>
+                    <input type="submit" value="Crear cuenta">
+                    
+
+                </form>
+            </div>
+            <div class="CrearCuentaD">
+
+                <button name="Iniciar Sesión" type="button">
+                    Crear cuenta </button>
 
 
             </div>
             <div class="container signin">
                 <p>Already have an account? <a href="#">Sign in</a>.</p>
             </div>
+
         </form>
     </div>
 
