@@ -1,0 +1,77 @@
+
+
+.grupos table{
+    
+   width: 100%;
+   height: 50%;
+   
+   
+   background: #EBEBEB;
+
+   border-radius: 15px;
+  
+}
+.grupos h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+.grupos h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    
+    color: #983056;
+}
+.grupos a{
+    text-decoration: none;
+}
+.Tusgrupos{
+    
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+}
+.Tusgrupos h3{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    height: 50%;
+    left: 50%;
+
+}
+.Tusgrupos p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10px;
+    width: 66%;
+    left: 50%;
+
+}
+
+.ImagTusgrupos{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    
+}
+.ImagTusgrupos img{
+    left: -7%;
+    top: -44%;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+.grupos img{
+    position: relative;
+}
