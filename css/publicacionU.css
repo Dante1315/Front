@@ -5,7 +5,7 @@
 }
 .publicaciones{
     /*   */
-    border: 2px solid rgba(0, 0, 0, 0.1);
+   
     box-sizing: border-box;    
    
 }
@@ -13,11 +13,10 @@
     /* Agregar publicación alumno */
     
     width: 100.3%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 12px;
-
-    
+    background-color: #fafafa;
 
 }
 .publicacionU span{
@@ -84,7 +83,9 @@
     line-height: 24px;
     color: #000000;
 }
-
+.imgpublicacionU{
+    margin: 1.5%;
+}
 .imgpublicacionU img{
     width: 100%;
     height: 20rem;
@@ -121,6 +122,9 @@
     width: 100%;/*-*/
 }
 
+.comentarioU{
+    margin: 1.5%;
+}
 .comentarioU input{
 /* Agrega comentario*/
    
@@ -133,6 +137,7 @@ align-items: center;
 padding: 12px;
 width: 90%;
 height: 5%;
+
 }
 .comentarioU button{
       /*botón de publicar en rectángulo*/
@@ -152,8 +157,8 @@ height: 5%;
       display: flex;
       align-items: center;
       text-align: center;
-      
       border: none;
+     
 }
 .comentarioU button:hover{
     /*Efecto de oprimir de botón de publicar en rectángulo*/

@@ -6,7 +6,7 @@
 }
 .publicaciones{
     /*   */
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    
     box-sizing: border-box;    
    
 }
@@ -27,9 +27,10 @@
     /* Agregar publicación alumno */
     
     width: 100.3%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 12px;
+    background-color: #FAFAFA;
 
 }
 .publicacionA span{
@@ -56,7 +57,7 @@
    
     
     border: none;
-    background: #F8F8F8;
+    background: #;
     resize: none;
     
 }

@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="./css/comunicados.css">
     <link rel="stylesheet" href="./css/grupos.css">
     <link rel="stylesheet" href="./css/batizianos.css">
+    <link rel="stylesheet" href="./css/notificaciones.css">
+    <link rel="stylesheet" href="./js/efecto.js">
+    
 
-    <title>The ninth planet </title>
+    <title>The ninth planet</title>
 
     <!--tipografías-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,14 +55,67 @@
 
         <a class="active" href="inicio.html"> <span class="material-icons">home</span></a>
         <a href="comunicados.html"><span class="material-icons-round">account_balance</span></a>
-        <a href="#contact"><span class="material-icons-round">notifications</span></a>
-        <a href="#about"><span class="material-icons-round">local_post_office</span></a>
+        <a id="N"><span class="material-icons-round">notifications</span></a>
+        <a href="mensajeria.html"><span class="material-icons-round">local_post_office</span></a>
         <a href="gruposP.html"> <span class="material-icons">groups</span></a>
         <a href="perfil.html"> <span class="material-icons">person</span></a>
-        <button type="submit" class="btn"><span class="material-icons-outlined">campaign</span></button>
-
+       
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder=" Search.." title="Type in a category">
     </div>
+    <!--vinculos de menu-->
+    <!--notificaciones -->
+    <div id="notificaciones" class="modal-N">
+        <!-- Modal notificaciones -->
+        <div class="modal-notificaciones">
+            <span class="close-n">&times;</span>
+            <h4>Notificaciones</h4>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="ImagAgregacomunicado">
+                                <img src="./img/Foto.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="notificacionUsuario">
+                                <h3> - Maria Perez ha comentado tu publicacion</h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="ImagAgregacomunicado">
+                                <img src="./img/Foto.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="notificacionUsuario">
+                                <h3> - Maria Perez ha comentado tu publicacion</h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="ImagAgregacomunicado">
+                                <img src="./img/Foto.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="notificacionUsuario">
+                                <h3> - Maria Perez ha comentado tu publicacion</h3>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--notificaciones -->
+    
+    <!--vinculos de menu-->
+
+
     <section class="Lateral">
         <div class="comunicados">
             <table>
@@ -503,6 +559,7 @@
                     </table>
                 </div>
                 <!--comentarios-->
+
             </div>
             <!--Fin de Publicación Usuario-->
             <br>
@@ -700,6 +757,38 @@
         </div>
 
     </section>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("notificaciones");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("N");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-n")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+    </script>
+
+
+
 </body>
 
 </html>
