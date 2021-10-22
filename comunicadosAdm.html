@@ -13,26 +13,21 @@
     <link rel="stylesheet" href="./css/grupos.css">
     <link rel="stylesheet" href="./css/batizianos.css">
     <link rel="stylesheet" href="./css/notificaciones.css">
-
-
     <title>The ninth planet</title>
-    <!--bootstrap-->
 
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--bootstrap-->
-    <!--tipografías-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!--icons-->
     <!-- https://material.io/resources/icons/?style=baseline -->
@@ -45,8 +40,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
     <!-- https://material.io/resources/icons/?style=twotone -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
@@ -55,68 +48,53 @@
         crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
-
-
-
-
+    <!--Menú-->
     <div id="menu">
-        <img src="./img/Logo solo dibujo.png">
+        <img src="./img/Logo The 9° Planet.PNG">
 
-        <a href="inicioAdm.html"> <span class="material-icons">home</span></a>
+        <a href="inicioAdm.html"> <span class="material-icons-round">home</span></a>
         <a class="active" href="comunicadosAdm.html"><span class="material-icons-round">account_balance</span></a>
 
-        <!-- Button trigger modal -->
         <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notificaciones">
             <span class="material-icons-round">notifications</span>
         </button>
 
         <a href="mensajeriaAdm.html"><span class="material-icons-round">local_post_office</span></a>
-        <a href="gestionUsuarios.html"><span class="material-icons">badge</span></a>
-        <a href="consultarReportes.html"> <span class="material-icons">supervised_user_circle</span></a>
+        <a href="gestionUsuarios.html"><span class="material-icons-round">badge</span></a>
+        <a href="consultarReportes.html"> <span class="material-icons-round">supervised_user_circle</span></a>
 
-
-        <!-- Button trigger modal -->
         <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#publicacion">
-            <span class="material-icons-outlined">campaign</span>
+            <span class="material-icons-round">campaign</span>
         </button>
+
         <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#opciones">
             <span class="material-icons-round">menu</span>
         </button>
-       
     </div>
-    <!--vinculos de menu-->
-    <!--notificaciones -->
+    <!--Menú-->
 
-    <!--notificaciones -->
-
-    <!--vinculos de menu-->
-
-
-
-
+    <!--Sesión de publicaciones-->
     <section class="public">
         <div class="publicaciones">
             <!--Nombre de la pagina-->
             <nav id="nombrepagina">
-                <h1>Comunicados </h1>
-
+                <h2>Comunicados </h2>
             </nav>
-
             <!--Nombre de la pagina-->
+
             <!--Agregar publicación-->
             <div class="publicacionA">
                 <span class="material-icons-outlined">
                     account_circle
                 </span>
-
                 <div class="textpublicacionA">
                     <textarea placeholder="¿Qué esta sucediendo?" rows="3.5" cols="40" name="msg" minlength="2"
                         maxlength="180"></textarea>
-                    <button type="submit" class="btn"> Publicar <span
-                            class="material-icons-outlined">campaign</span></button>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#publicar" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Publicar <span class="material-icons-outlined">campaign</span>
+                    </a>
                     <div class="imgpublicacionA">
                         <span class="material-icons-outlined">
                             image
@@ -126,102 +104,62 @@
             </div>
             <!--Agregar publicación-->
             <br>
-            <!--Publicación de Usuario-->
-            <div class="publicacionU">
-                <!--Nombre, Alias, Tiempo de publicación, Opciones-->
-                <div class="NombreU">
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="iconoFotoU">
-                                    <span class="material-icons-outlined">
-                                        account_circle
-                                    </span>
-                                </div>
-                            </td>
-                            <td>
-                                <h4> Usuario alumn@ </h4>
-                            </td>
-                            <td>
-                                <h5>(Alias)</h5>
-                            </td>
-                            <td>
-                                <p>00-min</p>
-                            </td>
-                            <td>
-                                <div class="iconoOpcionesU">
-                                    <span class=" material-icons-outlined">
-                                        more_vert
-                                    </span>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+            <div class="collapse" id="publicar">
+                <br>
+                <div class="card card-body">
+                    <!--Publicación de Usuario-->
+                    <div class="publicacionU">
+                        <!--Nombre, Alias, Tiempo de publicación, Opciones-->
+                        <div class="NombreU">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="iconoFotoU">
+                                            <span class="material-icons-outlined">
+                                                account_circle
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4> Usuario alumn@ </h4>
+                                    </td>
+                                    <td>
+                                        <h5>(Alias)</h5>
+                                    </td>
+                                    <td>
+                                        <p>00-min</p>
+                                    </td>
+                                    <td>
+                                        <div class="iconoOpcionesU">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#opcionesPublicacionComunicados">
+                                                <span class=" material-icons-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--Nombre, Alias, Tiempo de publicación, Opciones-->
+                        <!--Texto de la publicación-->
+                        <div class="textpublicacionU">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h2>Descripción de la publicacion (hasta 180 caracteres)</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--Texto de la publicación-->
+                    </div>
+                    <!--Fin de Publicación Usuario-->
+                    <br>
                 </div>
-                <!--Nombre, Alias, Tiempo de publicación, Opciones-->
-                <!--Texto de la publicación-->
-                <div class="textpublicacionU">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2>Descripción de la publicacion (hasta 180 caracteres)</h2>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <!--Texto de la publicación-->
-                <!--Imagen de la publicación-->
-                <div class="imgpublicacionU">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="./img/Foto.png">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!--Imagen de la publicación-->
-                <!--Reaciones de la publicación-->
-
-                <div class="iconoReaccionU">
-                    <table>
-                        <tr>
-                            <td>
-                                <p>000</p>
-                                <span class="material-icons-outlined">
-                                    favorite_border
-                                </span>
-                            </td>
-                            <td>
-                                <p>000</p>
-                                <span class="material-icons-outlined">
-                                    mode_comment
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <!--Reaciones de la publicación-->
-                <!--comentarios-->
-                <div class="comentarioU">
-                    <table>
-                        <tr>
-                            <td>
-
-                                <input type="text" placeholder="Agrega un comentario" size="93">
-                            </td>
-                            <td>
-                                <button type="submit" class="btn"> Publicar <span
-                                        class="material-icons-outlined">campaign</span></button>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-                <!--comentarios-->
             </div>
-            <!--Fin de Publicación Usuario-->
+            <!--Agregar publicación-->
             <br>
             <!--Publicación de Usuario-->
             <div class="publicacionU">
@@ -247,9 +185,12 @@
                             </td>
                             <td>
                                 <div class="iconoOpcionesU">
-                                    <span class=" material-icons-outlined">
-                                        more_vert
-                                    </span>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#opcionesPublicaciondesdeAdm">
+                                        <span class=" material-icons-outlined">
+                                            more_vert
+                                        </span>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
@@ -303,16 +244,34 @@
                     <table>
                         <tr>
                             <td>
-
                                 <input type="text" placeholder="Agrega un comentario" size="93">
                             </td>
                             <td>
-                                <button type="submit" class="btn"> Publicar <span
-                                        class="material-icons-outlined">campaign</span></button>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#comentar" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Publicar <span class="material-icons-outlined">campaign</span>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="collapse" id="comentar">
+                                    <br>
+                                    <div class="card card-body">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
                     </table>
+                    <br>
+
                 </div>
                 <!--comentarios-->
 
@@ -343,9 +302,12 @@
                             </td>
                             <td>
                                 <div class="iconoOpcionesU">
-                                    <span class=" material-icons-outlined">
-                                        more_vert
-                                    </span>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#opcionesPublicaciondesdeAdm">
+                                        <span class=" material-icons-outlined">
+                                            more_vert
+                                        </span>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
@@ -399,18 +361,37 @@
                     <table>
                         <tr>
                             <td>
-
                                 <input type="text" placeholder="Agrega un comentario" size="93">
                             </td>
                             <td>
-                                <button type="submit" class="btn"> Publicar <span
-                                        class="material-icons-outlined">campaign</span></button>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#comentar" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Publicar <span class="material-icons-outlined">campaign</span>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="collapse" id="comentar">
+                                    <br>
+                                    <div class="card card-body">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
                     </table>
+                    <br>
+
                 </div>
                 <!--comentarios-->
+
             </div>
             <!--Fin de Publicación Usuario-->
             <br>
@@ -438,9 +419,12 @@
                             </td>
                             <td>
                                 <div class="iconoOpcionesU">
-                                    <span class=" material-icons-outlined">
-                                        more_vert
-                                    </span>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#opcionesPublicaciondesdeAdm">
+                                        <span class=" material-icons-outlined">
+                                            more_vert
+                                        </span>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
@@ -494,27 +478,49 @@
                     <table>
                         <tr>
                             <td>
-
                                 <input type="text" placeholder="Agrega un comentario" size="93">
                             </td>
                             <td>
-                                <button type="submit" class="btn"> Publicar <span
-                                        class="material-icons-outlined">campaign</span></button>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#comentar" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Publicar <span class="material-icons-outlined">campaign</span>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="collapse" id="comentar">
+                                    <br>
+                                    <div class="card card-body">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
                     </table>
+                    <br>
+
                 </div>
                 <!--comentarios-->
+
             </div>
             <!--Fin de Publicación Usuario-->
             <br>
-            <br><br>
+
+
+
+
         </div>
 
     </section>
 
-    <!-- Modal -->
+    <!-- Modal de notificaciones -->
     <div class="modal fade" id="notificaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -529,9 +535,9 @@
             </div>
         </div>
     </div>
+    <!-- Modal de notificaciones -->
 
-
-    <!-- Modal -->
+    <!-- Modal  de publicacion-->
     <div class="modal fade" id="publicacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -563,7 +569,7 @@
                 </div>
                 <div class="modal-footer">
 
-                 
+
                     <a href="inicio.html">
                         <button class="btn btn-primary" data-bs-toggle="modal">
                             <h4>Publicar</h4>
@@ -574,8 +580,9 @@
             </div>
         </div>
     </div>
+    <!-- Modal  de publicacion-->
 
-
+    <!-- Modal  de opciones-->
     <div class="modal fade" id="opciones" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -591,13 +598,15 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                    <button class="btn btn-primary" data-bs-target="#restablecerContraseña" data-bs-toggle="modal">
                         Restablecer contraseña</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="restablecercontraseña"
+    <!-- Modal  de opciones-->
+    <!--Modal restablecer contraseña-->
+    <div class="modal fade" id="restablecerContraseña" aria-hidden="true" aria-labelledby="restablecercontraseña"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -619,9 +628,6 @@
                         <br>
 
                     </div>
-
-
-
                 </div>
                 <div class="modal-footer">
                     <a href="index.html">
@@ -631,6 +637,96 @@
             </div>
         </div>
     </div>
+    <!--Modal restablecer contraseña-->
+
+    <!--Modal de opciones Comentario desde Adm-->
+    <div class="modal fade" id="opcionesPublicaciondesdeAdm" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Opciones de publicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#ConfirmarReporte" data-bs-toggle="modal">
+                        Reportar publicación </button>
+                    <button class="btn btn-primary" data-bs-target="#ConfirmarReporte" data-bs-toggle="modal">
+                        Dar de baja publicación </button>
+                    <button class="btn btn-primary" data-bs-target="#MensajeCECyT" data-bs-toggle="modal">
+                        Mandar mensaje </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal de opciones Comentario desde Adm-->
+    <!--Modal de mensaje Comentario desde Adm-->
+    <div class="modal fade" id="MensajeCECyT" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="restablecercontraseña">Mensaje: CECyT N°9</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown
+                        when triggered.
+                    </div>
+                    <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown
+                        when triggered.
+                    </div>
+
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse" id="collapseWidthExample">
+                            <div class="card card-body" style="width: 300px;">
+                                This is some placeholder content for a horizontal collapse. It's hidden by default and
+                                shown when triggered.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" placeholder="" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            Mandar mensaje
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal de mensaje Comentario desde Adm-->
+    <!--Modal de confirmar reposte-->
+    <div class="modal fade" id="ConfirmarReporte" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Confirmar reporte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Gracias por tus comentarios</h2>
+
+                    <p>Tus comentarios son importantes para ayudarnosa que la comunidad de The ninth planet siga siendo un lugar seguro</p>
+                </div>
+                <div class="modal-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal de confirmar reposte-->
 
 </body>
 
