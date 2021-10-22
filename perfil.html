@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="./css/comunicados.css">
     <link rel="stylesheet" href="./css/grupos.css">
     <link rel="stylesheet" href="./css/batizianos.css">
+    <link rel="stylesheet" href="./css/notificaciones.css">
+    <link rel="stylesheet" href="./css/perfil.css">
 
-    <title>The ninth planet </title>
 
+
+    <title>The ninth planet</title>
+    <!--bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--bootstrap-->
     <!--tipografías-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,11 +49,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </head>
-
-
-
 <body>
 
     <div id="menu">
@@ -52,16 +63,31 @@
 
         <a href="inicio.html"> <span class="material-icons">home</span></a>
         <a href="comunicados.html"><span class="material-icons-round">account_balance</span></a>
-        <a href="#contact"><span class="material-icons-round">notifications</span></a>
-        <a href="#about"><span class="material-icons-round">local_post_office</span></a>
+
+        <!-- Button trigger modal -->
+        <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notificaciones">
+            <span class="material-icons-round">notifications</span>
+        </button>
+
+        <a href="mensajeria.html"><span class="material-icons-round">local_post_office</span></a>
         <a href="gruposP.html"> <span class="material-icons">groups</span></a>
         <a class="active" href="perfil.html"> <span class="material-icons">person</span></a>
-        <button type="submit" class="btn"><span class="material-icons-outlined">campaign</span></button>
 
+
+        <!-- Button trigger modal -->
+        <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#publicacion">
+            <span class="material-icons-outlined">campaign</span>
+        </button>
+        <button id="N" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#opciones">
+            <span class="material-icons-round">menu</span>
+        </button>
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder=" Search.." title="Type in a category">
     </div>
+ 
     <section class="Lateral">
+
         <div class="comunicados">
+
             <table>
                 <tr>
                     <td>
@@ -286,32 +312,30 @@
 
 
     </section>
+
+
+
     <section class="public">
         <div class="publicaciones">
             <!--Nombre de la pagina-->
             <nav id="nombrepagina">
                 <h1>Perfil</h1>
             </nav>
+
             <!--Nombre de la pagina-->
-            <!-- Info de Perfil-->
-            <div class="IconoPerfil">
+            <!--Agregar publicación-->
+            <div class="DatosPerfil">
                 <span class="material-icons-outlined">
                     account_circle
                 </span>
 
                 <div class="InfoPerfil">
-                    <textarea placeholder="¿Qué esta sucediendo?" rows="3.5" cols="40" name="msg" minlength="2"
-                        maxlength="180"></textarea>
-                    <button type="submit" class="btn"> Publicar <span
-                            class="material-icons-outlined">campaign</span></button>
-                    <div class="imgpublicacionA">
-                        <span class="material-icons-outlined">
-                            image
-                        </span>
-                    </div>
+                    
+                    <button type="submit" class="btn"> Editar </button>
+                  
                 </div>
             </div>
-            <!--Info de Perfil-->
+            <!--Agregar publicación-->
             <!--Agregar publicación-->
             <div class="publicacionA">
                 <span class="material-icons-outlined">
@@ -386,8 +410,10 @@
                         </tr>
                     </table>
                 </div>
+
                 <!--Imagen de la publicación-->
                 <!--Reaciones de la publicación-->
+
                 <div class="iconoReaccionU">
                     <table>
                         <tr>
@@ -519,6 +545,7 @@
                     </table>
                 </div>
                 <!--comentarios-->
+
             </div>
             <!--Fin de Publicación Usuario-->
             <br>
@@ -716,9 +743,135 @@
         </div>
 
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="notificaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Notificaciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Maria Perez ha comentado tu publicacion</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="publicacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Publicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!--Agregar publicación-->
+                    <div class="publicacionA">
+                        <span class="material-icons-outlined">
+                            account_circle
+                        </span>
+
+                        <div class="textpublicacionA">
+                            <textarea placeholder="¿Qué esta sucediendo?" rows="3.5" cols="40" name="msg" minlength="2"
+                                maxlength="180"></textarea>
+
+                            <div class="imgpublicacionA">
+                                <span class="material-icons-outlined">
+                                    image
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Agregar publicación-->
+
+                </div>
+                <div class="modal-footer">
+
+                 
+                    <a href="inicio.html">
+                        <button class="btn btn-primary" data-bs-toggle="modal">
+                            <h4>Publicar</h4>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="opciones" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Opciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <a href="index.html">
+                        <h4>Cerrar sesión</h4>
+                    </a>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        Restablecer contraseña</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="restablecercontraseña"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="restablecercontraseña">Restablecer contraseña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-auto">
+                        <input type="text" placeholder="Correo institucional" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                        <br>
+                        <input type="password" placeholder="Contraseña" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                        <br>
+                        <input type="password" placeholder="Confirmar contraseña" id="inputPassword6"
+                            class="form-control" aria-describedby="passwordHelpInline">
+                        <br>
+
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html">
+                        <button class="btn btn-primary" data-bs-toggle="modal">Actualizar contraseña</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
