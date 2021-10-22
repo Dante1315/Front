@@ -3,7 +3,7 @@ body{
 }
 #menu{
     /* menu */
-    position: absolute;
+   
     width: 100%;
     height: 10%;
     left: 0px;
@@ -32,14 +32,15 @@ top: 0px;
   
 #menu a{
     float: left;
-   
+    background: #FFFFFF;
+    border:  #FFFFFF;
     text-align: center;
     text-decoration: none;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 15%;
     right: 85%;
-    width: 6.5%;
+    width: 7.5%;
     
     padding: 12px ;
     color: #5C5C5C;
@@ -73,52 +74,38 @@ top: 0px;
    padding: 10px;
 
    position: absolute;
-   width: 21%;
-   height: 20px;
+   width: 23%;
+   height: 40px;
    left: 75.8%;
    top: 20px;
    background: rgba(241, 241, 241, 0.9);
    border-radius: 20px;
-   
    border: none;
 }
-#menu button{
-    /*botoón para publicar desde cualquier lado*/
-    
+  
+#N{
     float: left;
-   
+    background: #FFFFFF;
+    border:  #FFFFFF;
     text-align: center;
     text-decoration: none;
     position: absolute;
-    top: 37.2%;
-    left: 67%;
-    padding: 1.02%;
-
-    width: 4.9%;
-    height: 7%;
-
-    background: #1176CE;
-    border-radius: 50px;
-    
-    font-family: 'Fira Sans', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    
-  
-    color: #F1F1F1;
-    letter-spacing: 0.07em;
-
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    border: none;
+    top: 10%;
+    left: 14%;
+    right: 85%;
+    padding: 12px ;
+    color: #5C5C5C;
+    width: 7.5%;
+   
 }
 
-#menu button:hover{
-     /*Efecto de oprimir de botón de publicar en rectángulo*/
-     background: #0D5DA3;
-     opacity: 1;
+#menu button {
+   
+    position: relative;
 }
+
+
+
+
+
 

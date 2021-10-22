@@ -1,14 +1,12 @@
-
-.Lmensajes table{
+.batizianos table{
     
     width: 100%;
-    height: 50%;
     background: #EBEBEB;
-    border-radius: 15px;
+   
 
     
 }
-.Lmensajes h1{
+.batizianos h1{
      font-family: 'Fira Sans', sans-serif;
      font-style: normal;
      font-weight: normal;
@@ -17,7 +15,7 @@
      text-align: center;
      color: #000000;
 }
-.Lmensajes h4{
+.batizianos h4{
     font-family: 'Roboto', sans-serif;
      font-style: normal;
      font-weight: normal;
@@ -28,45 +26,28 @@
      
      color: #983056;
  }
-.Lmensajes a{
+.batizianos a{
      text-decoration: none;
  }
- .AgregaMensaje {
+ .Agregabatizianos {
  
      box-sizing: border-box;
-     width: 100%;
+     width: 90%;
      height: 90%;
     
  
-}
-
- .AgregaMensaje  h3{
+ }
+ .Agregabatizianos  h3{
      font-family: 'Lato', sans-serif;
      font-style: normal;
      font-weight: 400;
-     font-size: 14px;
+     font-size: 17px;
  }
 
  
- .ImagAgregaMensaje  {
-     box-sizing: border-box;
-     width: 100%;
-     height: 50%;
-     
- }
- .ImagAgregaMensaje  img{
-     left: -7%;
-     top: -44%;
-     width: 70px;
-     height: 70px;
-     border-radius: 15px;
- }
-.batizianos img{
-     position: relative;
- }
 .batizianos button {
     /*botón de publicar en rectángulo*/
-      width: 90%;
+      width: 80%;
       height: 50%;
   
       /* Arriba | Derecha | Abajo | Izquierda */
@@ -77,16 +58,13 @@
       
       font-family: 'Fira Sans', sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       font-size: .8rem;
     
       color: #F1F1F1;
       letter-spacing: 0.07em;
   
       
-      display: flex;
-      align-items: center;
-      text-align: center;
       
       border: none;
 }

@@ -1,27 +1,35 @@
 
 .public{
-    padding: 5% 27% 0% 17%;
+    padding: 7% 27% 0% 17%;
     /* rectangulo de publicaciónes*/
     
 }
 .publicaciones{
     /*   */
-    
+
     box-sizing: border-box;    
    
 }
 
 .publicaciones nav{
     /* Nombre de la página */
-
+    margin: 5%;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 1.2em;
+
     display: flex;
     align-items: center;
     color: #061C23;
    
+}
+.publicaciones h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.2em;
+
 }
 .publicacionA {
     /* Agregar publicación alumno */
@@ -57,7 +65,7 @@
    
     
     border: none;
-    background: #;
+  
     resize: none;
     
 }
