@@ -1,23 +1,18 @@
 .public{
     padding: 5% 27% 0% 17%;
     /* rectangulo de publicaciónes*/
-    
 }
 .publicaciones{
     /*   */
-   
     box-sizing: border-box;    
-   
 }
 .publicacionU {
     /* Agregar publicación alumno */
-    
     width: 100.3%;
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 12px;
     background-color: #fafafa;
-
 }
 .publicacionU span{
     /*icono de usuario en publicación alumno*/
@@ -28,7 +23,7 @@
 
 .iconoFotoU span{
     /*icono de usuario en publicación alumno*/
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: rgba(3, 22, 38, 0.5);
 }
 
@@ -70,7 +65,24 @@
     /*icono de ociones en publicación alumno*/
     font-size: 2.5rem;
     color: rgba(3, 22, 38, 0.5);
+    background-color: #fafafa;
 }
+.iconoOpcionesU button{
+    float: left;
+    background: #fafafa;
+    border:  #fafafa;
+    text-align: center;
+    text-decoration: none;
+    color: #5C5C5C;
+
+}
+.iconoOpcionesU button:hover{
+    /*Efecto de oprimir de botón de publicar en rectángulo*/
+    background: #fafafa;
+    border:  #fafafa;
+    opacity: 1;
+}
+
 
 .textpublicacionU h2{
     width: 100%;   
@@ -100,6 +112,13 @@
     padding: 3px 45%;
     color: #5C5C5C;
 }
+.iconoReaccionU span:hover{
+    /*Efecto de oprimir de botón de publicar en rectángulo*/
+    border: #983098;
+    color: #983056;
+    opacity: 1;
+}
+
 .iconoReaccionU p{
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -112,8 +131,8 @@
     width: 15%;
     padding: 3px 45%;
     color: #5C5C5C;
-    
 }
+
  
 .publicacionU table {
    
@@ -139,7 +158,7 @@ width: 90%;
 height: 5%;
 
 }
-.comentarioU button{
+.comentarioU a{
       /*botón de publicar en rectángulo*/
       
       background: #1176CE;
@@ -148,19 +167,17 @@ height: 5%;
       font-family: 'Fira Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     
       color: #F1F1F1;
       letter-spacing: 0.07em;
-  
-      
       display: flex;
       align-items: center;
       text-align: center;
       border: none;
      
 }
-.comentarioU button:hover{
+.comentarioU a:hover{
     /*Efecto de oprimir de botón de publicar en rectángulo*/
     background: #0D5DA3;
     opacity: 1;

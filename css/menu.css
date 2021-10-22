@@ -16,11 +16,11 @@ body{
 
 #menu img{
     /* Logo  */
-position: absolute;
-width: 8%;
-height: 100%;
-left: 1%;
-top: 0px;
+   position: absolute;
+   width: 8%;
+   height: 100%;
+   left: 1%;
+   top: 0px;
 }
 
 
